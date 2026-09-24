@@ -181,7 +181,7 @@ footer.site-footer .btn:hover{background:var(--gold-deep);}
   display:flex; align-items:center; justify-content:center;
   max-height:52vh; overflow:hidden;
 }
-.lightbox-media img{width:100%; height:100%; object-fit:contain; max-height:52vh;}
+.lightbox-media img{max-width:100%; max-height:52vh; width:auto; height:auto; object-fit:contain; display:block;}
 .lightbox-info{padding:22px 22px calc(22px + var(--safe-b));}
 .lightbox-info h3{font-size:clamp(20px,4vw,26px); margin-bottom:8px;}
 .lightbox-price{font-size:18px; font-weight:700; color:var(--gold-deep); margin:0 0 6px;}
@@ -192,7 +192,7 @@ footer.site-footer .btn:hover{background:var(--gold-deep);}
 @media(min-width:640px){
   .lightbox-panel{flex-direction:row; max-height:min(640px,90vh);}
   .lightbox-media{max-height:none; width:52%; flex:none;}
-  .lightbox-media img{max-height:none;}
+  .lightbox-media img{max-height:100%; max-width:100%;}
   .lightbox-info{width:48%; overflow-y:auto; display:flex; flex-direction:column; justify-content:center;}
 }
 
